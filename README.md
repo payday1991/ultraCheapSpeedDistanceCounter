@@ -8,7 +8,7 @@ The Ultra Cheap Speed and Distance Counter is a highly affordable and efficient 
 1. **Cost-Effectiveness**: With components totaling around 15 US dollars, it's an ultra-cheap, production-ready solution.
 2. **2.7-inch LCD with Backlight**: Features a clear and readable display, enhancing visibility in various lighting conditions.
 3. **Accurate Temperature and Humidity Measurement**: Provides precise environmental readings, crucial for applications like optic fiber installation.
-4. **Optional IP 54 Rating(IP53 by default)**: High-level protection against dust ingress and water jets, suitable for challenging industrial environments.
+4. **Optional IP 54 Rating(IP 53 by default)**: High-level protection against dust ingress and water jets, suitable for challenging industrial environments.
 5. **USB Type-C Charging**: Offers versatile charging options including power banks and smartphones for ease of use and convenience.
 6. **External or Built-In HALL Encoder Sensors**: For precise speed and distance measurement.
 7. **Non-Volatile Memory**: Tracks mileage, on-time, and service reminders.
