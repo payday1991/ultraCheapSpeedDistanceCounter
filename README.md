@@ -27,7 +27,7 @@ A detailed list of components and their pricing highlights the cost-effectivenes
 - Measurement of speed 0-99m/min and distance with customizable resolution (0.1m by default).
 - Display: 2.7-inch LCD with backlight.
 - Measurement Accuracy: ±1°C for temperature and ±4% for humidity.
-- Protection Rating: IP 55.
+- Protection Rating: IP 53(IP 54 optional).
 - Charging: USB Type-C socket with a silicone rubber plug.
 
 ## License
