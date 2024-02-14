@@ -197,7 +197,7 @@ static inline void showSettingsScreen (machineData_t* machineData) {
 }
 
 
-
+#if defined(USE_TEMPERATURE_HUMIDITY_SENSOR)
 /**
  * @brief Displays the temperature and humidity screen on the LCD.
  * 
@@ -229,7 +229,7 @@ static inline void showTemperatureHumidityScreen (machineData_t* machineData) {
 	mini_snprintf(str, 8, "%u%%", machineData->machine.outsideHumidity);
 	glcd_draw_string_xy(85, 35, str);
 }
-
+#endif
 
 
 /**
@@ -269,16 +269,24 @@ void updateScreen (machineData_t* machineData) {
 
 				case mainScreenSpeed:
 					showMainScreenSpeed(machineData);
+					#if defined(USE_TEMPERATURE_HUMIDITY_SENSOR)
 					showTemperature();
+					#endif
 					break;
 
 				case mainScreenDistance:
 					showMainScreenDistance(machineData);
+					#if defined(USE_TEMPERATURE_HUMIDITY_SENSOR)
 					showTemperature();
+					#endif
 					break;
 
 				case temperatureHumidityScreen:
+					#if defined(USE_TEMPERATURE_HUMIDITY_SENSOR)
 					showTemperatureHumidityScreen(machineData);
+					#else
+					machineData->visuals.currentScreen++;
+					#endif
 					break;
 
 				case settingsScreen:

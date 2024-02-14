@@ -98,7 +98,7 @@ static void checkBattery(machineData_t* machineData) {
 	}
 }
 
-
+#if defined(USE_TEMPERATURE_HUMIDITY_SENSOR)
 /**
  * @brief Initializes and reads the sensor data.
  * 
@@ -111,6 +111,7 @@ static void initializeAndReadTheSensor() {
 		machineData.machine.outsideHumidity = BROKEN_SENSOR_READING;
 	}
 }
+#endif
 
 /**
  * @brief Updates the current screen being displayed.
@@ -142,7 +143,11 @@ static inline void initializeSystem() {
     checkBattery(&machineData);
     machineData.machine.batteryTemperature = getTemperature();
     getSavedMileageDataFromFlash(FLASH_ADDR_TO_STORE_BACKUP_DATA, NON_VOLATILE_FLASH_DATA_STORAGE_SIZE, sizeof(mileageData));
-    initializeAndReadTheSensor();
+
+    #if defined(USE_TEMPERATURE_HUMIDITY_SENSOR)
+	initializeAndReadTheSensor();
+	#endif
+
     displayInitialScreen();
     systick_init();
 }
@@ -159,6 +164,7 @@ void mainLoop() {
 			machineData.flags.batteryNeedsMeasuring = false;
 		}
 
+		#if defined(USE_TEMPERATURE_HUMIDITY_SENSOR)
 		if (machineData.flags.temperatureAndHumidityNeedsMeasuring)
 		{
 			if(aht20read(&machineData.machine.outsideTemperature,&machineData.machine.outsideHumidity)) 
@@ -169,7 +175,8 @@ void mainLoop() {
 			}
 			machineData.flags.temperatureAndHumidityNeedsMeasuring = false; 
 		}
-		
+		#endif
+
 		if (machineData.flags.screenNeedsUpdating) 
 		{
 			iwdgFeed(); //Feed the watchdog

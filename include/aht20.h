@@ -1,4 +1,7 @@
 #pragma once
+#include "main.h"
+
+#if defined(USE_TEMPERATURE_HUMIDITY_SENSOR)
 
 #include "ch32v003fun/ch32v003fun.h"
 #include <stdbool.h>
@@ -49,3 +52,5 @@ bool aht20read(int8_t *tem, uint8_t *hum);
  * @return Returns OK if the initialization is successful, otherwise returns ERROR.
  */
 bool aht20init(void);
+
+#endif

@@ -14,8 +14,9 @@ static inline void clockInit(void)
 	// Enable DMA CLK
 	RCC->AHBPCENR |= RCC_AHBPeriph_DMA1;
 
+	#if defined(USE_TEMPERATURE_HUMIDITY_SENSOR) || defined(USE_EXTERNAL_FLASH)
 	RCC->APB1PCENR |= RCC_APB1Periph_I2C1; //I2C1 clock
-
+	#endif
 	//SPI1, TIM1 CLK and alternate IO function module clock, GPIO's and ADC
 	RCC->APB2PCENR |= RCC_APB2Periph_SPI1 | RCC_APB2Periph_TIM1 | RCC_AFIOEN | RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOC | RCC_APB2Periph_GPIOD | RCC_APB2Periph_ADC1;;
 }
@@ -266,6 +267,8 @@ inline void  init (void) {
 	spiInit();
 	glcd_init();
 	adcInit();
+	#if defined(USE_TEMPERATURE_HUMIDITY_SENSOR) || defined(USE_EXTERNAL_FLASH)
 	i2cInit();
+	#endif
 	iwdgInit(0xfff, IWDG_Prescaler_256); // set up watchdog to about 2 s
 }

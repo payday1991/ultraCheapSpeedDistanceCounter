@@ -320,11 +320,15 @@ static void periodicMeasurements() {
         machineData.flags.batteryNeedsMeasuring = 1;
         cntToMeasureBattery = BATTERY_VOLTAGE_MEASURING_PERIOD;
     }
-    //Check if we need to measure the temperature and humidity
+	
+    #if defined(USE_TEMPERATURE_HUMIDITY_SENSOR)
+	//Check if we need to measure the temperature and humidity
     if (--cntToMeasureTemperatureAndHumidity == 0) {
         machineData.flags.temperatureAndHumidityNeedsMeasuring = 1;
         cntToMeasureTemperatureAndHumidity = TEMPERATURE_AND_HIMIDITY_MEASURING_PERIOD;
-    } 
+    }
+	#endif
+
     //Check if we need to update the screen
     if (--cntToUpdateScreen == 0 && !machineData.flags.screenNeedsUpdating) {
         machineData.flags.screenNeedsUpdating = 1;

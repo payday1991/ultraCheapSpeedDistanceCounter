@@ -6,6 +6,10 @@
 #include <stdbool.h>
 #include <string.h>
 
+/*--------------------------------------------------------------Options list--------------------------------------------------------------*/
+#define USE_TEMPERATURE_HUMIDITY_SENSOR
+// #define USE_EXTERNAL_FLASH
+
 /*--------------------------------------------------------------Battery stuff--------------------------------------------------------------*/
 #define BATTERY_CHARGING_BLINK_PERIOD_DIVIDER 5u
 #define BATTERY_CHARGING_OFFSET_VOLTAGE 100u //In mV

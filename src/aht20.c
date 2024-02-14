@@ -1,4 +1,8 @@
 #include "include/aht20.h"
+#include "include/main.h"
+
+
+#if defined(USE_TEMPERATURE_HUMIDITY_SENSOR)
 
 /*
  * check for 32-bit event codes
@@ -143,3 +147,4 @@ bool aht20init(void)
     Delay_Ms(15);
     return OK;
 }
+#endif
