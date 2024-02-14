@@ -1,0 +1,41 @@
+{
+	"folders": [
+		{
+			"name": "fw",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"main.h": "c",
+			"ch32v003fun.h": "c",
+			"init.h": "c",
+			"lpc111x.h": "c",
+			"stm32f4.h": "c",
+			"battery8x8.h": "c",
+			"calibri23x32.h": "c",
+			"liberation_sans15x21_numbers.h": "c",
+			"glcd.h": "c",
+			"st7565r.h": "c",
+			"visuals.h": "c",
+			"font5x7.h": "c",
+			"liberation_sans17x17_alpha.h": "c",
+			"cstdio": "c",
+			"font14x16.h": "c",
+			"stdbool.h": "c",
+			"font13x14.h": "c",
+			"machinedata.h": "c",
+			"funconfig.h": "c",
+			"string.h": "c",
+			"ch32v00x_flash.h": "c",
+			"ch32v003_gpio_branchless.h": "c",
+			"stdio.h": "c",
+			"glcd_graphics.h": "c",
+			"stdint.h": "c",
+			"flash.h": "c",
+			"adc.h": "c",
+			"aht20.h": "c"
+		},
+		"mcu-debug.debug-tracker-vscode.debugLevel": 1
+	}
+}
