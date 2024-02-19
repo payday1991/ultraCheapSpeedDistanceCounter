@@ -25,4 +25,4 @@ It is meant to be used on cable blowing machines, cable winches, etc. This count
 - Charging: USB Type-C socket with a silicone rubber plug.
 
 ## License
-This project is licensed under the [MIT License](LICENSE.md) - see the LICENSE file for details.
+See the LICENSE file for details.
