@@ -1,7 +1,7 @@
 # Ultra Cheap Speed and Distance Counter
 
 ## Overview
-The Ultra Cheap Speed and Distance Counter is a highly affordable and efficient solution designed for cable blowing machines and other machinery requiring precise surface speed and distance measurement. Built around the economical CH32V003 microcontroller and leveraging the CH32v003fun library by cnlohr, this device delivers reliable performance at a fraction of the cost of conventional systems.
+The Ultra Cheap Speed and Distance Counter is a highly affordable and efficient solution designed for cable blowing machines, cable winches and other machinery requiring precise surface speed and distance measurement. Built around the economical CH32V003 microcontroller and leveraging the CH32v003fun library by cnlohr, this device delivers reliable performance at a fraction of the cost of conventional systems.
 
 ### Key Features
 
@@ -14,13 +14,7 @@ The Ultra Cheap Speed and Distance Counter is a highly affordable and efficient 
 7. **Non-Volatile Memory**: Tracks mileage, on-time, and service reminders.
 
 ## Application
-Ideal for cable blowing machines, this counter is also versatile for other applications where monitoring speed and distance is crucial. Its robust build and accurate readings make it a reliable choice for various industrial settings.
-
-## Installation and Usage
-The device is designed for straightforward installation and ease of use. Detailed installation guides and usage instructions will be provided.
-
-## Components and Cost Breakdown
-A detailed list of components and their pricing highlights the cost-effectiveness of the solution.
+Meant to be used on a cable blowing machines, cable winches etc. this counter is also versatile for other applications where monitoring speed and distance needed. Its robust build and accurate readings make it a reliable choice for various industrial applications.
 
 ## Technical Specifications
 - Robust, shockproof, industrial-grade design.
