@@ -14,10 +14,8 @@
 extern int mini_snprintf(char* buffer, unsigned int buffer_len, const char *fmt, ...);
 
 
-
-
 void showLogo(const unsigned char *data) {
-	/*Show CBS logo*/
+	/*Show PKED logo*/
 	glcd_draw_bitmap(data); //something instead...
 	glcd_write();
 	Delay_Ms(3000);
@@ -264,7 +262,7 @@ static inline void showServiceMeScreen(void) {
 void updateScreen (machineData_t* machineData) { 
 	switch (machineData->visuals.currentScreen) {
 				case logoScreen:
-					showLogo(cbs);
+					showLogo(logo);
 					break;
 
 				case mainScreenSpeed:

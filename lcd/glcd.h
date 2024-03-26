@@ -86,7 +86,6 @@ typedef struct {
 #include "glcd_graphs.h"
 #include "glcd_text_tiny.h"
 #include "glcd_text.h"
-#include "unit_tests.h"
 
 /**
  * \name Colour Constants

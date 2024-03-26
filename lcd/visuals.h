@@ -7,7 +7,7 @@
 extern uint32_t sysTickCnt;
 
 /*Bitmap pictures*/
-extern const unsigned char cbs[];
+extern const unsigned char logo[];
 
 /**
  * @brief Show the logo for 3 seconds after powering up.
