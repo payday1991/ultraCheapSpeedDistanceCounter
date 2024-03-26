@@ -2,6 +2,8 @@
 
 ## Overview
 The Ultra-Cheap Speed and Distance Counter is a highly affordable and efficient solution designed for cable blowing machines, winches, and other machinery requiring precise surface speed and distance measurement. Built around the cheap RISC-V CH32V003 microcontroller and leveraging the CH32v003fun library by cnlohr, this device delivers reliable performance at a fraction of the cost of conventional systems.
+[schematics.pdf](https://github.com/payday1991/ultraCheapSpeedDistanceCounter/files/14756823/schematics.pdf)
+![IMG_6149](https://github.com/payday1991/ultraCheapSpeedDistanceCounter/assets/79850569/7c6ee174-a647-434c-9c84-8823d25ef0fa)
 
 ### Key Features
 
